@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* :root{
+    --bgcolor:#80AF81;
+} */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #80AF81;
+}
+section{
+    width: 30%;
+    position: relative;
+}
+.neededPic{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+button.btn{
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #2b562a;
+    color: aliceblue;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.clickme{
+    height: 3.5em;
+    background-color: #D6EFD8;
+    border-radius: 10px;
+    position:relative;
+    margin-top: 10px;
+}
+.blog{
+    font-size: 5em;
+    border-radius: 10px;
+    text-align: center;
+}
+@media only screen and (max-width:480px){
+    
+    section{
+        width:80vw;
+    }
+    .neededPic{
+        height:350px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px){
+    section{
+        width:55%;
+    }
+    .neededPic{
+        width:100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+    section{
+        width:55%;
+    }
+    .neededPic{
+        width:100%;
+        object-fit:cover;
+        height: 400px;
+    }
+
+
+}
